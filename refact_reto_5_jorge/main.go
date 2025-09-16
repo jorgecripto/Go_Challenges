@@ -822,4 +822,7 @@ func main() {
 	myTeamPokemon := CreateMyPokemonTeam(pokemons)
 	fmt.Println(myTeamPokemon)
 
+	theStrongestPokemon := FindStrongestByType(pokemons, anyType)
+	fmt.Println(theStrongestPokemon)
+
 }

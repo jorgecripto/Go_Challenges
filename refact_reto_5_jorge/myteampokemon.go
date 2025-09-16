@@ -5,6 +5,7 @@ import "fmt"
 const typeFire = "Eléctrico"
 const typeWater = "Bicho"
 const typePlant = "Psíquico"
+const anyType = "Eléctrico"
 
 func CreateMyPokemonTeam(pokemons []Pokemon) string {
 	var finalMessage string
@@ -38,3 +39,27 @@ func CreateMyPokemonTeam(pokemons []Pokemon) string {
 
 	return finalMessage 
 }
+
+func FindStrongestByType(pokemons []Pokemon, anyType string) Pokemon  {
+	var strongestPokemon Pokemon
+
+	for _, pokemon := range pokemons {
+
+		if pokemon.Tipo == anyType {
+			average := (pokemon.Habilidades[0].Poder + pokemon.Habilidades[1].Poder)/2
+			if strongestPokemon.Nombre == ""{
+				strongestPokemon = pokemon
+			} else {
+				newAverage := (strongestPokemon.Habilidades[0].Poder + strongestPokemon.Habilidades[1].Poder)/2
+				if average > newAverage{
+					strongestPokemon = pokemon
+				}
+			}
+
+			}
+
+		}
+		return strongestPokemon
+	}
+
+	
