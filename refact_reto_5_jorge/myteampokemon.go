@@ -5,7 +5,7 @@ import "fmt"
 const typeFire = "Eléctrico"
 const typeWater = "Bicho"
 const typePlant = "Psíquico"
-const anyType = "Eléctrico"
+const anyType = "Fuego"
 
 func CreateMyPokemonTeam(pokemons []Pokemon) string {
 	var finalMessage string

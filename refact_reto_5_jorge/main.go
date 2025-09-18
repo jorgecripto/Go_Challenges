@@ -819,8 +819,8 @@ func main() {
 
 	//fmt.Println(pokemons)
 
-	myTeamPokemon := CreateMyPokemonTeam(pokemons)
-	fmt.Println(myTeamPokemon)
+	// myTeamPokemon := CreateMyPokemonTeam(pokemons)
+	// fmt.Println(myTeamPokemon)
 
 	theStrongestPokemon := FindStrongestByType(pokemons, anyType)
 	fmt.Println(theStrongestPokemon)
